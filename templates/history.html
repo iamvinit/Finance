@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" >
+      <tr>
+        <th>Transaction No.</th>
+        <th>Type</th>
+        <th>Share</th>
+        <th>Price</th>
+        <th>No. of Shares</th>
+        <th>Time</th>
+      </tr>
+      {% for i in range(transno|length) %}
+      <tr>
+        <th>{{transno[i]}}</th>
+        <th>{{purtype[i]}}</th>
+        <th>{{share[i]}}</th>
+        <th>{{price[i]}}</th>
+        <th>{{numshare[i]}}</th>
+        <th>{{time[i]}}</th>
+      </tr>
+      {% endfor %}
+    </table>
+{% endblock %}

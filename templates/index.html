@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" >
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>No. of Shares</th>
+        <th>Current Price</th>
+        <th>Price Brought</th>
+        <th>Total</th>
+      </tr>
+      {% for i in range(symbol|length) %}
+      <tr>
+        <th>{{symbol[i]}}</th>
+        <th>{{name[i]}}</th>
+        <th>{{numshare[i]}}</th>
+        <th>{{curprice[i]}}</th>
+        <th>{{price[i]}}</th>
+        <th>{{total[i]}}</th>
+      </tr>
+      {% endfor %}
+    </table>
+{% endblock %}
