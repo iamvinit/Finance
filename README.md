@@ -1,3 +1,3 @@
 # Finance
-C$50 Finance using flask
+Finance Buy and Sell Stock using flask
 
